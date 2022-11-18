@@ -1,16 +1,14 @@
 function showMyDiv(e){     
     let x =  e.pageX;
-    let y = e.pageY;
-    //let bg = e.style.backgroundColor;
+    let y = e.pageY;  
     
-    document.getElementById("myDiv").style.top = y - 5 + "px";
-    document.getElementById("myDiv").style.left = x - 5 + "px";
-    //document.getElementById("myDiv").style.backgroundColor = `${bg}`;
+    document.getElementById("myDiv").style.top = y + 20 + "px";
+    document.getElementById("myDiv").style.left = x + 20 + "px";    
 }
 
 function show(elem){
   document.getElementById("myDiv").classList.remove("hide");
-    console.log(elem.style);
+    console.log(elem.style.width);
 }
 
 function hideMyDiv(e){
